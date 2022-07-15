@@ -2,19 +2,51 @@
 .formulaire{
     text-align: center;
     background-color:  #d9d9d9;
-    margin-left: 610px;
-    margin-right: 610px;
+    margin-left: 380px;
+    margin-right: 380px;
     margin-top: 90px;
     margin-bottom: 90px;
 padding-right: 80px;
 padding-left: 80px;
-padding-top: 50px;
-padding-bottom: 50px;
-border-radius: 15%;
-
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 20%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+-webkit-box-shadow: 19px 20px 50px 33px rgba(0,0,0,0.8); 
+box-shadow: 19px 20px 50px 33px rgba(0,0,0,0.8);
     }
+
+
     .titleForm{
     font-weight: bold;
-    font-size: larger;
+    font-size: xx-large;
     
     }
+.registerForm{
+
+
+
+}
+
+.champ{
+margin-bottom: 10px;
+padding-right: 80px;
+
+text-align: end;
+font-size: larger;
+}
+
+    .spacer{
+padding: 10px;
+
+    }
+
+    #button {
+        color: rgb(255, 255, 255); font-size: 22px; line-height: 22px; padding: 17px; border-radius: 19px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%); box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px; display: inline-block;}
+        #button:hover {
+        background: #96BA15; }
+        #button:active {
+        background: #627a0a; }
+

@@ -1,6 +1,7 @@
 <div class="formulaire">
-    <form  >
-        <h3 class="titleForm">Enregistrement de l'animal :</h3>
+    <h3 class="titleForm">Enregistrement de l'animal :</h3>
+    <div class="spacer"></div>
+    <form  class="registerForm">
         <div class="champ">
             <label for="nom">
                 Nom :
@@ -14,14 +15,26 @@
             </label>
         </div>
         <div class="champ">
-            <label for="éleveur">
-                éleveur :
-                <input type="number" formControlName="eleveur">
+            <label for="entree">
+                motif d'entrée :
+
+<select name="entree" formControlName="entree">
+<option value="1">Naissance sur site</option>
+<option value="2">Achat</option>
+</select>
+            
             </label>
         </div>
         <div class="champ">
             <label for="race">
                 code racial :
+                <select name="race" formControlName="race">
+                    <!-- <div *ngFor="let race in races">
+                        <div [race]="race">
+                        <option value="{{race.id}}">{{race.libelle}}</option>
+                    </div>
+                    </div> -->
+                </select>
                 <input type="number" formControlName="race">
             </label>
         </div>
@@ -37,6 +50,6 @@
                 <input type="number" formControlName="troupeau">
             </label>
         </div>
-        <button type="submit">Ajouter</button>
+        <button id="button" type="submit">Ajouter</button>
     </form>
     </div>
