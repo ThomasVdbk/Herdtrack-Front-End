@@ -2,20 +2,20 @@
 .formulaire{
     text-align: center;
     background-color:  #d9d9d9;
-    margin-left: 380px;
-    margin-right: 380px;
+    margin-left: 250px;
+    margin-right: 250px;
     margin-top: 90px;
     margin-bottom: 90px;
-padding-right: 80px;
-padding-left: 80px;
+padding-right: 180px;
+padding-left: 180px;
 padding-top: 20px;
 padding-bottom: 20px;
-border-radius: 20%;
+border-radius: 3%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
--webkit-box-shadow: 19px 20px 50px 33px rgba(0,0,0,0.8); 
-box-shadow: 19px 20px 50px 33px rgba(0,0,0,0.8);
+-webkit-box-shadow: 2px 2px 5px 3px rgba(185, 184, 184, 0.8); 
+box-shadow: 2px 2px 5px 3px rgba(141, 138, 138, 0.8);
     }
 
 
@@ -44,7 +44,22 @@ padding: 10px;
     }
 
     #button {
-        color: rgb(255, 255, 255); font-size: 22px; line-height: 22px; padding: 17px; border-radius: 19px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%); box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px; display: inline-block;}
+        color: rgb(255, 255, 255);
+         font-size: 22px; 
+         line-height: 22px;
+         padding: 7px;
+          padding-left: 40px; 
+          padding-right: 40px;
+          border-radius: 9px; 
+          font-family: Georgia, serif;
+           font-weight: normal;
+            text-decoration: none;
+             font-style: normal;
+              font-variant: normal;
+               text-transform: none;
+                background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%);
+                 box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
+                 display: inline-block;}
         #button:hover {
         background: #96BA15; }
         #button:active {
