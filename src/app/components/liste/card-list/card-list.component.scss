@@ -25,5 +25,15 @@ hr{
     .card{
         width:250px;
         display:flex;
+        justify-content: space-around;
     }
+    .troupeau{
+        border-bottom: solid 1px black;
+        padding:15px;
+    }
+    .parc{
+        border-bottom: solid 1px black;
+        padding:15px;
+    }
+    
 }
