@@ -25,10 +25,24 @@ box-shadow: 2px 2px 5px 3px rgba(141, 138, 138, 0.8);
     
     }
 .registerForm{
-
-
-
 }
+
+.selector{
+    padding: 7px;
+     padding-left: 20px; 
+     padding-right: 20px;
+     border-radius: 9px; 
+     font-family: Georgia, serif;
+      font-weight: normal;
+       text-decoration: none;
+        font-style: normal;
+         font-variant: normal;
+          text-transform: none;
+           background-image: linear-gradient(to right, #d3e692 0%, #c1e248 50%, #b0df06 100%);
+            box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
+            display: inline-block;
+}
+
 
 .champ{
 margin-bottom: 10px;

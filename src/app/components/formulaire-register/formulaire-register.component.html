@@ -18,7 +18,7 @@
             <label for="entree">
                 motif d'entrée :
 
-<select name="entree" formControlName="entree">
+<select name="entree" formControlName="entree" class="selector">
 <option value="1">Naissance sur site</option>
 <option value="2">Achat</option>
 </select>
@@ -28,14 +28,13 @@
         <div class="champ">
             <label for="race">
                 code racial :
-                <select name="race" formControlName="race">
+                <select name="race" formControlName="race" class="selector">
                     <!-- <div *ngFor="let race in races">
                         <div [race]="race">
                         <option value="{{race.id}}">{{race.libelle}}</option>
                     </div>
                     </div> -->
                 </select>
-                <input type="number" formControlName="race">
             </label>
         </div>
         <div class="champ">
