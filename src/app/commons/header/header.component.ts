@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  navLinks: any[];
+  constructor() {
+    this.navLinks = [
+      {
+        label: 'Menu 1',
+        link: '',
+        index: 0
+      }, {
+        label: 'Menu 2',
+        link: '',
+        index: 1
+      }
+    ];
+  }
 
   ngOnInit(): void {
   }
