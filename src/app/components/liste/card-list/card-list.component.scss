@@ -20,3 +20,10 @@ hr{
     margin:0px;
     padding:0px;
 }
+//responsive
+@media screen and (max-width: 750px) {
+    .card{
+        width:250px;
+        display:flex;
+    }
+}

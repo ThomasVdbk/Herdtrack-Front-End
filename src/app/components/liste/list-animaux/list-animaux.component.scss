@@ -9,3 +9,15 @@
 .card{
     margin-right:15px;
 }
+//responsive
+@media screen and (max-width: 750px) {
+    .alignementCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        padding-top: 15px;
+    }
+    
+  }
