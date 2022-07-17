@@ -16,6 +16,54 @@ export class ListAnimauxComponent implements OnInit {
     parc:'la bas'
   },
   {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
+    nom:'marguerite',
+    numero:'1664AZE',
+    troupeau:'la bande à guerite',
+    parc:'la bas'
+  },
+  {
     nom:'Bertha',
     numero:'23456TER',
     troupeau:'la bande à guerite',
