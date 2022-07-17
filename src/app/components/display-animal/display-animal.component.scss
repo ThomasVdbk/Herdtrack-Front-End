@@ -1,0 +1,79 @@
+.container_animal {
+  max-width: 1050px;
+  margin: 90px auto;
+  padding: 0px;
+}
+
+.container_result_animal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.card {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.a {
+  width: 250px;
+}
+
+.b {
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+.body-card {
+  text-align: left;
+}
+
+.title {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.label {
+
+}
+.value {
+}
+
+.actions {
+  text-align: center;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.l {
+
+height:15px
+
+}
+
+@media screen and (max-width: 768px) {
+  .container_result_animal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+
+  .b {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+}
