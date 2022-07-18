@@ -1,7 +1,5 @@
-
-.formulaire{
-    text-align: center;
-    background-color:  #d9d9d9;
+@media only screen and (min-width: 768px){
+ .formulaire{
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 90px;
@@ -10,6 +8,48 @@ padding-right: 180px;
 padding-left: 180px;
 padding-top: 20px;
 padding-bottom: 20px;
+
+.champ{
+    margin-bottom: 10px;
+    padding-right: 80px;
+    
+    text-align: end;
+    font-size: larger;
+    }
+
+ }   
+ 
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .formulaire{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+    .champ{
+        margin-bottom: 3px;
+        padding-right: 20px;
+        
+        text-align: end;
+        font-size: large;
+        }
+}
+
+
+
+
+.formulaire{
+    text-align: center;
+    background-color:  #d9d9d9;
 border-radius: 3%;
 display: flex;
 flex-direction: column;
@@ -24,8 +64,6 @@ box-shadow: 2px 2px 5px 3px rgba(141, 138, 138, 0.8);
     font-size: xx-large;
     
     }
-.registerForm{
-}
 
 .selector{
     padding: 7px;
@@ -44,13 +82,7 @@ box-shadow: 2px 2px 5px 3px rgba(141, 138, 138, 0.8);
 }
 
 
-.champ{
-margin-bottom: 10px;
-padding-right: 80px;
 
-text-align: end;
-font-size: larger;
-}
 
     .spacer{
 padding: 10px;
@@ -79,3 +111,4 @@ padding: 10px;
         #button:active {
         background: #627a0a; }
 
+        
