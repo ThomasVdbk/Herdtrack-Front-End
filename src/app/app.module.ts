@@ -7,13 +7,15 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { HeaderComponent } from './commons/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NotFoundComponent } from './commons/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NotFoundComponent
 
   ],
   imports: [
