@@ -18,9 +18,17 @@
 }
 
 .a {
-  width: 250px;
+  width: 85%;
+  margin-right:15px;
 }
 
+.detail {
+  width: 550px;
+  margin-bottom: 50px;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 10px;
+}
 .b {
   width: 550px;
   margin-bottom: 50px;
@@ -39,10 +47,6 @@
   color: black;
   font-weight: bold;
 }
-
-.label {}
-
-.value {}
 
 .actions {
   text-align: center;
@@ -67,19 +71,22 @@
   .a {
     width: 250px;
     margin-bottom: 50px;
+    margin-right: 0px;
+  }
+
+  .detail{
+    width:250px;
   }
 
   .b {
     width: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 }
 
 @media screen and (width > 769px) {
 
   .title {
-    color: red;
     font-size: x-large;
   }
-
 }
