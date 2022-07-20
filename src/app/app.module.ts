@@ -5,6 +5,9 @@ import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+import { FormulaireRegisterComponent } from './components/formulaire-register/formulaire-register.component';
+
 import { ListAnimauxComponent } from './components/liste/list-animaux/list-animaux.component';
 
 import { CardListComponent } from './components/liste/card-list/card-list.component';
@@ -21,8 +24,12 @@ import { NotFoundComponent } from './commons/not-found/not-found.component';
   declarations: [
     AppComponent,
 
+
+    FormulaireRegisterComponent,
+
     ListAnimauxComponent,
     CardListComponent,
+
 
     FooterComponent,
     HeaderComponent,

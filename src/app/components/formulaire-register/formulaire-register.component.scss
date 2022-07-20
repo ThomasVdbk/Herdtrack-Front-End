@@ -1,0 +1,114 @@
+@media only screen and (min-width: 768px){
+ .formulaire{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+padding-right: 180px;
+padding-left: 180px;
+padding-top: 20px;
+padding-bottom: 20px;
+
+.champ{
+    margin-bottom: 10px;
+    padding-right: 80px;
+    
+    text-align: end;
+    font-size: larger;
+    }
+
+ }   
+ 
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .formulaire{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+    .champ{
+        margin-bottom: 3px;
+        padding-right: 20px;
+        
+        text-align: end;
+        font-size: large;
+        }
+}
+
+
+
+
+.formulaire{
+    text-align: center;
+    background-color:  #d9d9d9;
+border-radius: 3%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+-webkit-box-shadow: 2px 2px 5px 3px rgba(185, 184, 184, 0.8); 
+box-shadow: 2px 2px 5px 3px rgba(141, 138, 138, 0.8);
+    }
+
+
+    .titleForm{
+    font-weight: bold;
+    font-size: xx-large;
+    
+    }
+
+.selector{
+    padding: 7px;
+     padding-left: 20px; 
+     padding-right: 20px;
+     border-radius: 9px; 
+     font-family: Georgia, serif;
+      font-weight: normal;
+       text-decoration: none;
+        font-style: normal;
+         font-variant: normal;
+          text-transform: none;
+           background-image: linear-gradient(to right, #d3e692 0%, #c1e248 50%, #b0df06 100%);
+            box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
+            display: inline-block;
+}
+
+
+
+
+    .spacer{
+padding: 10px;
+
+    }
+
+    #button {
+        color: rgb(255, 255, 255);
+         font-size: 22px; 
+         line-height: 22px;
+         padding: 7px;
+          padding-left: 40px; 
+          padding-right: 40px;
+          border-radius: 9px; 
+          font-family: Georgia, serif;
+           font-weight: normal;
+            text-decoration: none;
+             font-style: normal;
+              font-variant: normal;
+               text-transform: none;
+                background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%);
+                 box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
+                 display: inline-block;}
+        #button:hover {
+        background: #96BA15; }
+        #button:active {
+        background: #627a0a; }
+
+        
