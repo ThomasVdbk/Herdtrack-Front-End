@@ -1,0 +1,40 @@
+.card{
+    width:150px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding:0px;
+    margin-top:15px;
+}
+.title{
+    padding-top:10px;
+    padding-right:5px;
+    padding-left:5px;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+.body-card{
+    text-align: center;
+}
+hr{
+    border-top: 1px solid black;
+    margin:0px;
+    padding:0px;
+}
+//responsive
+@media screen and (max-width: 750px) {
+    .card{
+        width:250px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .troupeau{
+        border-bottom: solid 1px black;
+        padding:15px;
+    }
+    .parc{
+        border-bottom: solid 1px black;
+        padding:15px;
+    }
+    
+}
