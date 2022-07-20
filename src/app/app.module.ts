@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { FormulaireRegisterComponent } from './components/formulaire-register/formulaire-register.component';
+
+import { ListAnimauxComponent } from './components/liste/list-animaux/list-animaux.component';
+
+import { CardListComponent } from './components/liste/card-list/card-list.component';
 
 import { FooterComponent } from './commons/footer/footer.component';
 import { HeaderComponent } from './commons/header/header.component';
@@ -13,11 +19,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
 
+
     FormulaireRegisterComponent,
+
+    ListAnimauxComponent,
+    CardListComponent,
+
 
     FooterComponent,
     HeaderComponent,
@@ -29,7 +41,11 @@ import { NotFoundComponent } from './commons/not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+    MatCardModule,
+
     MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
