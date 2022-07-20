@@ -1,0 +1,55 @@
+<div class="formulaire">
+    <h3 class="titleForm">Enregistrement de l'animal :</h3>
+    <div class="spacer"></div>
+    <form  class="registerForm">
+        <div class="champ">
+            <label for="nom">
+                Nom :
+                <input type="text" formControlName="nom">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="reference">
+                numéro de travail :
+                <input type="text" formControlName="reference">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="entree">
+                motif d'entrée :
+
+<select name="entree" formControlName="entree" class="selector">
+<option value="1">Naissance sur site</option>
+<option value="2">Achat</option>
+</select>
+            
+            </label>
+        </div>
+        <div class="champ">
+            <label for="race">
+                code racial :
+                <select name="race" formControlName="race" class="selector">
+                    <!-- <div *ngFor="let race in races">
+                        <div [race]="race">
+                        <option value="{{race.id}}">{{race.libelle}}</option>
+                    </div>
+                    </div> -->
+                </select>
+            </label>
+        </div>
+        <div class="champ">
+            <label for="parc">
+                parc:
+                <input type="number" formControlName="parc">
+            </label>
+        </div>
+        <div class="champ">
+            <label for="troupeau">
+                troupeau :
+                <input type="number" formControlName="troupeau">
+            </label>
+        </div>
+        <div class="spacer"></div>
+        <button id="button" type="submit">Ajouter</button>
+    </form>
+    </div>

@@ -5,8 +5,17 @@ import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { DisplayAnimalComponent } from './components/display-animal/display-animal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { FormulaireRegisterComponent } from './components/formulaire-register/formulaire-register.component';
+
+import { ListAnimauxComponent } from './components/liste/list-animaux/list-animaux.component';
+
+import { CardListComponent } from './components/liste/card-list/card-list.component';
+
 
 import { FooterComponent } from './commons/footer/footer.component';
 import { HeaderComponent } from './commons/header/header.component';
@@ -19,9 +28,10 @@ import { NotFoundComponent } from './commons/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     DisplayAnimalComponent,
-
+    FormulaireRegisterComponent,
+    ListAnimauxComponent,
+    CardListComponent,
     FooterComponent,
     HeaderComponent,
     NotFoundComponent
