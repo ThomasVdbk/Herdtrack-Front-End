@@ -29,11 +29,11 @@
         <div class="champ">
             <label for="race">
                 code racial :
-                <!-- <select name="race" formControlName="race" class="selector" *ngfor="let race of races">
-                        <option value="{{race.id}}">{{race.libelle}}</option>
-                    
-                    
-                </select> -->
+                <select name="race" formControlName="race" class="selector">
+
+                        <option *ngfor="let race of races" value={{race | json}}>{{race.libelle}}</option>
+
+                </select> 
             </label>
         </div>
         <div class="champ">
