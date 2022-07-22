@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +24,9 @@ import { HeaderComponent } from './components/commons/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
 
-
+import { FormCoursesComponent } from './components/OutputListeCourses/form-courses/form-courses.component';
+import { DataCoursesComponent } from './components/OutputListeCourses/data-courses/data-courses.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -34,6 +37,12 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
     CardListComponent,
     FooterComponent,
     HeaderComponent,
+
+    DataCoursesComponent,
+    FormCoursesComponent,
+
+
+
     NotFoundComponent
 
 
@@ -42,10 +51,11 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    MatSliderModule,
     MatCardModule,
 
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
