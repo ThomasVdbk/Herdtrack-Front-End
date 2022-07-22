@@ -1,7 +1,8 @@
 <div class="formulaire">
+  
     <h3 class="titleForm">Enregistrement de l'animal :</h3>
     <div class="spacer"></div>
-    <form  class="registerForm">
+    <form [formGroup]="form" class="registerForm" (ngSubmit)="onSubmit()">
         <div class="champ">
             <label for="nom">
                 Nom :
