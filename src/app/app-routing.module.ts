@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
 import { DisplayAnimalComponent } from './components/display-animal/display-animal.component';
 import { FormulaireRegisterComponent } from './components/formulaire-register/formulaire-register.component';
+
 import { ListAnimauxComponent } from './components/liste/list-animaux/list-animaux.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
 {path:'product/:type/:id',component: DisplayAnimalComponent},
 {path:'enregistrer/ajouter',component: FormulaireRegisterComponent},
 { path: "**", component: NotFoundComponent }
+
 ];
 
 @NgModule({
