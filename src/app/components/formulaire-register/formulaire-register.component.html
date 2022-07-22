@@ -1,31 +1,33 @@
 <div class="formulaire">
+
     <h3 class="titleForm">Enregistrement de l'animal :</h3>
     <div class="spacer"></div>
-    <form  class="registerForm">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="registerForm">
         <div class="champ">
             <label for="nom">
                 Nom :
                 <input type="text" formControlName="nom">
             </label>
         </div>
-        
+
         <div class="champ">
             <label for="reference">
                 numéro de travail :
                 <input type="number" formControlName="reference">
             </label>
         </div>
+
         <div class="champ">
             <label for="entree">
                 motif d'entrée :
 
-                
-                
+
+
     <select name="entree" formControlName="entree" class="selector">
     <option value="{'id': 1,'date':'2022-07-21','raison': 'Naissance'}">Naissance sur site</option>
     <option value="{'id': 2,'date':'2022-07-21','raison': 'Achat'}">Achat</option>
     </select>
-            
+
             </label>
         </div>
         <div class="champ">
@@ -37,7 +39,7 @@
                         <option value="{'id': 2,'libelle': 'Ovin'}">Ovin</option>
                         <option value="{'id': 3,'libelle': 'Caprin'}">Caprin</option>
 
-                </select> 
+                </select>
             </label>
         </div>
         <div class="champ">
@@ -48,10 +50,10 @@
                         <option value="{'id':1,'parc':{'id':1,'libelle':'La buvette','nombreTroupeau':3,'quarantaine':false},'espece':{'id':1,'libelle':'Bovin'}}">n°1 - parc : la buvette</option>
                         <option value="{'id':2,'parc':{'id':1,'libelle':'Le pousse-café','nombreTroupeau':3,'quarantaine':false},'espece':{'id':1,'libelle':'Bovin'}}">n°2 - parc : le pousse-café</option>
 
-                </select> 
+                </select>
             </label>
         </div>
         <div class="spacer"></div>
-        <button id="button" type="submit">Ajouter</button>
+        <button id="button" button="">Ajouter</button>
     </form>
     </div>
