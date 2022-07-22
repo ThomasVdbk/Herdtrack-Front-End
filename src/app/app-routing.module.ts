@@ -4,11 +4,15 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
 import { DisplayAnimalComponent } from './components/display-animal/display-animal.component';
 import { FormulaireRegisterComponent } from './components/formulaire-register/formulaire-register.component';
 
+import { ListAnimauxComponent } from './components/liste/list-animaux/list-animaux.component';
+
 const routes: Routes = [
-   {path:'',redirectTo: 'formulaire', pathMatch: "full"},
-  { path: "formulaire", component: FormulaireRegisterComponent }
-  // ,
-  // { path: "**", component: NotFoundComponent }
+{path:'',redirectTo: 'home', pathMatch: "full"},
+{path:'home',component: ListAnimauxComponent},
+{path:'product/:type/:id',component: DisplayAnimalComponent},
+{path:'enregistrer/ajouter',component: FormulaireRegisterComponent},
+{ path: "**", component: NotFoundComponent }
+
 ];
 
 @NgModule({

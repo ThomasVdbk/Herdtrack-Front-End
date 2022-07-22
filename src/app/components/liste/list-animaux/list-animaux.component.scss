@@ -1,25 +1,32 @@
-.container{
-    margin-left:15px;
-    margin-top:15px;
+.containerList{
+    max-width: 1050px;
+    margin: 90px auto;
 }
 .alignementCard{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
-    
+    justify-content: center;
 }
 .card{
     margin-right:45px;
 }
 //responsive
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px)  {
     .alignementCard{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .card{
-        padding-top: 15px;
+        height:120px;
+        margin-bottom: 90px;
+        margin-right: 0px;
     }
     
+  }
+  @media screen and (width > 769px) and (width<1045px){
+    .containerList{
+        max-width: 769px;
+        margin: 90px auto;
+    }
   }
