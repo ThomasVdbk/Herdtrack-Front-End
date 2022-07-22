@@ -22,6 +22,7 @@ import { HeaderComponent } from './components/commons/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
+import { EnregistrementComponent } from './components/enregistrement/enregistrement.component';
 
 
 
@@ -34,7 +35,8 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
     CardListComponent,
     FooterComponent,
     HeaderComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EnregistrementComponent
 
 
   ],
