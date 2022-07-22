@@ -24,9 +24,13 @@ import { HeaderComponent } from './components/commons/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
 
+
 import { FormCoursesComponent } from './components/formulaire-animal/form-animaux/form-courses.component';
 import { DataCoursesComponent } from './components/formulaire-animal/data-animaux/data-courses.component';
 import {ReactiveFormsModule} from "@angular/forms";
+
+import { EnregistrementComponent } from './components/enregistrement/enregistrement.component';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,17 +49,28 @@ import {ReactiveFormsModule} from "@angular/forms";
 
     NotFoundComponent
 
+    NotFoundComponent,
+    EnregistrementComponent
+
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
     MatSliderModule,
     MatCardModule,
 
     MatToolbarModule,
     ReactiveFormsModule
+
+FormsModule,
+    MatCardModule,
+    ReactiveFormsModule ,
+    MatToolbarModule
+
 
   ],
   providers: [],

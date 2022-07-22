@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Output, OnInit, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-formulaire-register',
@@ -8,11 +9,34 @@ import { Component, OnInit } from '@angular/core';
 export class FormulaireRegisterComponent implements OnInit {
 
 
+  @Output()
+   finish= new EventEmitter;
+
+  form: FormGroup = new FormGroup({})
+
+  constructor(private builder: FormBuilder) { 
+  
 
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
+    console.log("titi")
+    this.form = this.builder.group({
+      "id":[''],
+      "nom": [''],
+      "reference": [''],
+      "entree":[''],
+      "espece": [''],
+       "troupeau": ['']
+    })
   }
+
+
+  onSubmit(){
+    this.finish.emit(this.form.value);
+    console.log(this.form.value)
+  }
+
 
 }
