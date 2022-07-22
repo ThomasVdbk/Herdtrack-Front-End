@@ -9,11 +9,15 @@ import { Form, FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class FormCoursesComponent implements OnInit {
 
   @Output()
-  onAddArticles: EventEmitter<any> = new EventEmitter();
+  onAddAnimals: EventEmitter<any> = new EventEmitter();
 
-  article: FormGroup = this.formBuilder.group({
-    designation: ['', Validators.required],
-    prix: ['', Validators.required]
+  animal: FormGroup = this.formBuilder.group({
+    id: [''],
+    nom: ['', Validators.required],
+    reference: ['', Validators.required],
+    entree: ['', Validators.required],
+    espece: ['', Validators.required],
+    troupeau: ['', Validators.required]
 
   });
 
@@ -26,15 +30,17 @@ export class FormCoursesComponent implements OnInit {
   }
 
   private resetForm(): void {
-    this.article.reset();
+    this.animal.reset();
     this.submitted = false;
 
   }
 
   public onSubmit(): void {
+
     this.submitted = true;
-    if (this.article.valid) {
-      this.onAddArticles.emit(this.article.value);
+    if (this.animal.valid) {
+      this.onAddAnimals.emit(this.animal.value);
+      console.log(this.animal.value);
       this.resetForm();
     } else {
       alert("Formulaire invalid");
@@ -43,7 +49,7 @@ export class FormCoursesComponent implements OnInit {
 
   get form() {
 
-    return this.article.controls;
+    return this.animal.controls;
 
   };
 }

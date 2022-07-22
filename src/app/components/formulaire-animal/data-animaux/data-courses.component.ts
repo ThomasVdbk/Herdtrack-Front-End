@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataCoursesComponent implements OnInit {
 
-  courses: any[] = [];
+  animals: any[] = [];
 
-  addCourse(course: any): void {
-    this.courses.push(course);
+  addAnimal(animal: any): void {
+    console.log('addAnimal');
+    this.animals.push(animal);
   }
 
   constructor() { }
@@ -20,7 +21,9 @@ export class DataCoursesComponent implements OnInit {
 
   get total():number {
 
-    return this.courses.reduce((total, current)=> total + current.prix, 0);
+    //return this.animals.reduce((total, current)=> total + current.prix, 0);
+
+    return 1;
   }
 
 }

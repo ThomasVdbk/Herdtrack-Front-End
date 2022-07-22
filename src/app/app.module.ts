@@ -24,8 +24,8 @@ import { HeaderComponent } from './components/commons/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
 
-import { FormCoursesComponent } from './components/OutputListeCourses/form-courses/form-courses.component';
-import { DataCoursesComponent } from './components/OutputListeCourses/data-courses/data-courses.component';
+import { FormCoursesComponent } from './components/formulaire-animal/form-animaux/form-courses.component';
+import { DataCoursesComponent } from './components/formulaire-animal/data-animaux/data-courses.component';
 import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({

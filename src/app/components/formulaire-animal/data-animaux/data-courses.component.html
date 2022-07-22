@@ -11,9 +11,9 @@
     </div>
 </nav>
 
-<div *ngFor="let course of courses">
+<div *ngFor="let animal of animals">
     <p>
-        {{ course.designation}} : {{ course.prix}}
+        {{ animal.nom}} : {{ animal.espace}}
     </p>
 </div>
 
@@ -21,6 +21,6 @@
     Toltal : {{total}}
 </div>
 
-<app-form-courses (onAddArticles)="addCourse($event)"></app-form-courses>
+<app-form-courses (onAddArticles)="addAnimal($event)"></app-form-courses>
 
 <mat-slider min = "1" max="100" step="1" value="50"></mat-slider>
