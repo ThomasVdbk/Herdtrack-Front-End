@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,9 +23,14 @@ import { HeaderComponent } from './components/commons/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/commons/not-found/not-found.component';
+
+
+import { FormCoursesComponent } from './components/formulaire-animal/form-animaux/form-courses.component';
+import { DataCoursesComponent } from './components/formulaire-animal/data-animaux/data-courses.component';
+import {ReactiveFormsModule} from "@angular/forms";
+
 import { EnregistrementComponent } from './components/enregistrement/enregistrement.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
@@ -35,8 +41,17 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     CardListComponent,
     FooterComponent,
     HeaderComponent,
+
+    DataCoursesComponent,
+    FormCoursesComponent,
+
+
+
+    NotFoundComponent
+
     NotFoundComponent,
     EnregistrementComponent
+
 
 
   ],
@@ -44,10 +59,18 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+    MatSliderModule,
+    MatCardModule,
+
+    MatToolbarModule,
+    ReactiveFormsModule
+
 FormsModule,
     MatCardModule,
     ReactiveFormsModule ,
     MatToolbarModule
+
 
   ],
   providers: [],

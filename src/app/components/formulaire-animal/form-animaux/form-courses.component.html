@@ -1,0 +1,32 @@
+<p>form-courses works!</p>
+
+<div>
+    <form [formGroup]="animal" (ngSubmit)="onSubmit()">
+        <div>
+            <label >nom : </label>
+            <input type="text" formControlName='nom' name="nom" placeholder="nom"/>
+            <span *ngIf="submitted && form['nom'].invalid">*Non nonValide</span>
+        </div>
+        <div>
+            <label >reference : </label>
+            <input type="text" formControlName='reference' name="reference" placeholder="reference"/>
+            <span *ngIf="submitted && form['reference'].invalid">*reference nonValide</span>
+        </div>
+        <div>
+            <label >entree : </label>
+            <input type="text" formControlName='entree' name="entree" placeholder="entree"/>
+            <span *ngIf="submitted && form['entree'].invalid">*entree nonValide</span>
+        </div>
+        <div>
+            <label >espece : </label>
+            <input type="text" formControlName='espece' name="espece" placeholder="espece"/>
+            <span *ngIf="submitted && form['espece'].invalid">*espece nonValide</span>
+        </div>
+        <div>
+            <label >troupeau : </label>
+            <input type="text" formControlName='troupeau' name="troupeau" placeholder="troupeau"/>
+            <span *ngIf="submitted && form['troupeau'].invalid">*troupeau nonValide</span>
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
