@@ -44,9 +44,7 @@ import { EnregistrementComponent } from './components/enregistrement/enregistrem
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     MatCardModule,
-
     MatToolbarModule
 
   ],
