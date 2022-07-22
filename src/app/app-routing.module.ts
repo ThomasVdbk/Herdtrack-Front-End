@@ -9,7 +9,7 @@ const routes: Routes = [
 {path:'',redirectTo: 'home', pathMatch: "full"},
 {path:'home',component: ListAnimauxComponent},
 {path:'product/:type/:id',component: DisplayAnimalComponent},
-{path:'formulaire',component: FormulaireRegisterComponent},
+{path:'enregistrer/ajouter',component: FormulaireRegisterComponent},
 { path: "**", component: NotFoundComponent }
 ];
 
