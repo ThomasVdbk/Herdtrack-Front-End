@@ -1,5 +1,6 @@
 import { Component,Output, OnInit, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import {Event} from "@angular/router";
 
 @Component({
   selector: 'app-formulaire-register',
@@ -14,8 +15,8 @@ export class FormulaireRegisterComponent implements OnInit {
 
   form: FormGroup = new FormGroup({})
 
-  constructor(private builder: FormBuilder) { 
-  
+  constructor(private builder: FormBuilder) {
+
 
 
   }
@@ -34,7 +35,7 @@ export class FormulaireRegisterComponent implements OnInit {
 
 
   onSubmit(){
-    this.finish.emit(this.form.value);
+    this.finish.emit(this.form.value,);
     console.log(this.form.value)
   }
 

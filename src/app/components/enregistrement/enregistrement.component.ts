@@ -17,7 +17,7 @@ animaux:IAnimal[] =[];
 animal:string = "IAnimal";
 
 
-  constructor(private animalservice:AnimalService) { 
+  constructor(private animalservice:AnimalService) {
 this.animalservice.findAll().subscribe((data)=>this.animaux = data);
 
   }
@@ -26,13 +26,13 @@ this.animalservice.findAll().subscribe((data)=>this.animaux = data);
   }
 
 
-  onSaveAnimal(animal: any) { 
+  onSaveAnimal(animal: any) {
     console.log("ZATZAT");
     this.animalservice.save(animal).subscribe((newAnimal: any) => this.animaux.push(newAnimal));
-   
+
   }
 
-  
+
 }
 
 
