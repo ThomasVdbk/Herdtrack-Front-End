@@ -1,6 +1,8 @@
 import { Component,Output, OnInit, EventEmitter } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import {Event} from "@angular/router";
+import { IAnimal } from '../models/animal.model';
+import { AnimalService } from '../services/animal/animal.service';
 
 @Component({
   selector: 'app-formulaire-register',
@@ -9,13 +11,24 @@ import {Event} from "@angular/router";
 })
 export class FormulaireRegisterComponent implements OnInit {
 
+  // form: FormGroup = new FormGroup({})
+  
+  // @Output()
+  //  finish= new EventEmitter;
 
-  @Output()
-   finish= new EventEmitter;
+   animal: FormGroup = this.builder.group({
+    id: [''],
+    nom: ['', Validators.required],
+    reference: ['', Validators.required],
+    // entree: ['', Validators.required],
+    // espece: ['', Validators.required],
+    // troupeau: ['', Validators.required]
 
-  form: FormGroup = new FormGroup({})
+  })
 
-  constructor(private builder: FormBuilder) {
+  submitted: boolean = false;
+
+  constructor(private builder: FormBuilder, private animalService:AnimalService) {
 
 
 
@@ -23,21 +36,42 @@ export class FormulaireRegisterComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("titi")
-    this.form = this.builder.group({
-      "id":[''],
-      "nom": [''],
-      "reference": [''],
-      "entree":[''],
-      "espece": [''],
-       "troupeau": ['']
-    })
+    // this.form = this.builder.group({
+      // "id":[''],
+      // "nom": [''],
+      // "reference": [''],
+      // // "entree":[''],
+      // // "espece": [''],
+      // //  "troupeau": ['']
+    // })
   }
 
 
+  save() {
+    this.animalService.save(this.animal.value)
+      .subscribe(data => console.log(data), error => console.log(error));
+  }
+  private resetForm(): void {
+    this.animal.reset();
+    this.submitted = false;
+
+  }
   onSubmit(){
-    this.finish.emit(this.form.value,);
-    console.log(this.form.value)
+    this.submitted = true;
+    if(this.animal.valid){
+      this.save();
+      console.log(this.animal.value);
+      this.resetForm();
+    }else {
+      alert("Formulaire invalid");
+    }
+      
+    } 
+    // this.finish.emit(this.form.value,);
+    // console.log(this.form.value)
+    get form() {
+
+      return this.animal.controls;
+  
+    };
   }
-
-
-}

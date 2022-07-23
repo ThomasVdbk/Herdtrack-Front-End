@@ -27,10 +27,12 @@ import { NotFoundComponent } from './components/commons/not-found/not-found.comp
 
 import { FormCoursesComponent } from './components/formulaire-animal/form-animaux/form-courses.component';
 import { DataCoursesComponent } from './components/formulaire-animal/data-animaux/data-courses.component';
-import {ReactiveFormsModule} from "@angular/forms";
+
 
 import { EnregistrementComponent } from './components/enregistrement/enregistrement.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,13 +43,12 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     CardListComponent,
     FooterComponent,
     HeaderComponent,
-
     DataCoursesComponent,
     FormCoursesComponent,
 
 
 
-    NotFoundComponent
+  
 
     NotFoundComponent,
     EnregistrementComponent
@@ -57,6 +58,7 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
 
@@ -64,9 +66,9 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     MatCardModule,
 
     MatToolbarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
-FormsModule,
+    FormsModule,
     MatCardModule,
     ReactiveFormsModule ,
     MatToolbarModule
