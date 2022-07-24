@@ -10,7 +10,7 @@ import { ListAnimauxComponent } from './components/liste/list-animaux/list-anima
 const routes: Routes = [
 {path:'',redirectTo: 'home', pathMatch: "full"},
 {path:'home',component: ListAnimauxComponent},
-{path:'product/:type/:id',component: DisplayAnimalComponent},
+{path:'animal/:id',component: DisplayAnimalComponent},
 {path:'enregistrer/ajouter',component: FormulaireRegisterComponent},
 { path: "**", component: NotFoundComponent }
 

@@ -54,3 +54,24 @@ hr{
         margin-left: 10px;
     }
   }
+  #button {
+    color: rgb(255, 255, 255);
+     font-size: 14px; 
+     line-height: 14px;
+     padding: 7px;
+      padding-left: 40px; 
+      padding-right: 40px;
+      border-radius: 9px; 
+      font-family: Georgia, serif;
+       font-weight: normal;
+        text-decoration: none;
+         font-style: normal;
+          font-variant: normal;
+           text-transform: none;
+            background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%);
+             box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
+             display: inline-block;}
+    #button:hover {
+    background: #96BA15; }
+    #button:active {
+    background: #627a0a; }
