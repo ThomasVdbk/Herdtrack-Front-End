@@ -11,6 +11,7 @@ const apiUrlEleveur = environment.API_URL+"animal";
   providedIn: 'root'
 })
 export class AnimalService {
+ 
 
   constructor(private http:HttpClient) {
      }
@@ -22,5 +23,8 @@ export class AnimalService {
     console.log("PEPITO");
     return this.http.post<IAnimal>(apiUrlEleveur,animal);
     
+  }
+   findById(id:number) {
+    return this.http.get<IAnimal>(apiUrlEleveur + "/" + id);
   }
 }

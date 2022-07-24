@@ -1,18 +1,19 @@
 <mat-card class="card">
+  <button class="buttonCard" id="button" routerLink="/animal/{{animal.id}}" mat-button>DETAILS</button>
     <div class="headerCard">
-        <mat-card-subtitle class="title">nom :<br> numero </mat-card-subtitle>
+        <mat-card-subtitle class="title">nom : <h1>{{animal.nom}}</h1><br> numero : <h1>{{animal.reference}} </h1></mat-card-subtitle>
     </div>
-    
     <hr>
     <mat-card-content>
       <p class="body-card troupeau">Troupeau</p>
-      <p class="body-card">troupeau</p>
+      <p class="body-card"> {{animal.troupeau.id}} - espece : {{animal.troupeau.espece.libelle}} </p>
     </mat-card-content>
     <hr>
     <mat-card-content>
         <p class="body-card parc">Parc </p>
-        <p class="body-card">parc</p>
+       <p class="body-card parc">{{animal.troupeau.parc.libelle}} </p> 
     </mat-card-content>
+    
     <!-- <mat-card-actions>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>

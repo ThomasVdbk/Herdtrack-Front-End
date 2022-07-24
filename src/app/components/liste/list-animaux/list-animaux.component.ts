@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IAnimal } from '../../models/animal.model';
+import { AnimalService } from '../../services/animal/animal.service';
 
 @Component({
   selector: 'app-list-animaux',
@@ -7,72 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListAnimauxComponent implements OnInit {
 
+  animaux: IAnimal[]=[]
   
-  animaux:any[]=[
-    {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'marguerite',
-    numero:'1664AZE',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-  },
-  {
-    nom:'Bertha',
-    numero:'23456TER',
-    troupeau:'la bande à guerite',
-    parc:'la bas'
-
-  }]
-  constructor() { }
+  constructor(private animalService : AnimalService) {this.animalService.findAll().subscribe((data)=>this.animaux= data); }
 
   ngOnInit(): void {
   }
-
+  
+  
+  
 }
