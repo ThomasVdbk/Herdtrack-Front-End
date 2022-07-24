@@ -1,4 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
+import { IAnimal } from '../../models/animal.model';
+import { AnimalService } from '../../services/animal/animal.service';
 
 @Component({
   selector: 'app-card-list',
@@ -7,9 +9,13 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 })
 export class CardListComponent implements OnInit {
 
+@Input()
+animal:any;
   
-  animaux:any;
-  constructor() { }
+  constructor() {
+
+
+   }
 
   ngOnInit(): void {
   }
