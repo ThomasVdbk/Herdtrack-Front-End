@@ -20,7 +20,8 @@ export class FormulaireRegisterComponent implements OnInit {
     id : 1,
     date : new Date('2022-07-21'),
     raison:'Naissance'
-  }]
+  },{id: 2, date : new Date('2022-07-21'),
+raison: 'Achat'}]
   
    animal: FormGroup = this.builder.group({
     id: [''],
