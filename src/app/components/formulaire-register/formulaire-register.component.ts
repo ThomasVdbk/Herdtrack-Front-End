@@ -85,7 +85,7 @@ troupeaux :any[]=[{id:1,parc:{id:1,libelle:'La buvette',nombreTroupeau:3,quarant
       console.log(this.animal.value);
       this.resetForm();
     } else {
-      alert("Formulaire invalid");
+      alert("Formulaire invalide");
     }
 
   }
