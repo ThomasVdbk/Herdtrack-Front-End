@@ -25,9 +25,6 @@ troupeaux :any[]=[{id:1,parc:{id:1,libelle:'La buvette',nombreTroupeau:3,quarant
 ,{id:2,parc:{id:2, libelle: "Le pousse-café",nombreTroupeau:3,quarantaine:false},espece:{id:2,libelle:"Ovin"}}]
 
 
-   animal: FormGroup = this.builder.group({
-
-
   especes: any[] = [{
     id: 1,
     libelle:'Bovin',
@@ -99,5 +96,5 @@ troupeaux :any[]=[{id:1,parc:{id:1,libelle:'La buvette',nombreTroupeau:3,quarant
 
     return this.animal.controls;
 
-  };
+  }
 }
