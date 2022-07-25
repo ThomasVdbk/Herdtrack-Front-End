@@ -2,6 +2,7 @@ import { Component,Output, OnInit, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import {Event} from "@angular/router";
 import { IAnimal } from '../models/animal.model';
+import { IEntree } from '../models/entree.model';
 import { AnimalService } from '../services/animal/animal.service';
 
 @Component({
@@ -15,12 +16,17 @@ export class FormulaireRegisterComponent implements OnInit {
   
   // @Output()
   //  finish= new EventEmitter;
-
+  entrees : any[]=[{
+    id : 1,
+    date : new Date('2022-07-21'),
+    raison:'Naissance'
+  }]
+  
    animal: FormGroup = this.builder.group({
     id: [''],
     nom: ['', Validators.required],
     reference: ['', Validators.required],
-    // entree: ['', Validators.required],
+    entree: ['', Validators.required],
     // espece: ['', Validators.required],
     // troupeau: ['', Validators.required]
 
@@ -36,18 +42,9 @@ export class FormulaireRegisterComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("titi")
-    // this.form = this.builder.group({
-      // "id":[''],
-      // "nom": [''],
-      // "reference": [''],
-      // // "entree":[''],
-      // // "espece": [''],
-      // //  "troupeau": ['']
-    // })
   }
-
-
   save() {
+    this.animal.value.entree = this.entrees[this.animal.value.entree]
     this.animalService.save(this.animal.value)
       .subscribe(data => console.log(data), error => console.log(error));
   }
