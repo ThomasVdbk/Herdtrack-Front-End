@@ -1,27 +1,43 @@
 # HerdtrackFrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+Herdtrack est une application qui permet d'enregistrer, retrouver et suivre un animal.
+Projet POC réalisé dans le cadre de la POEC, parcours développeur d'application Java, de l'école Aston.
 
-## Development server
+Le projet est composé de 2 applications :
+Herdtrack Backend : Logique métier accécible à partir d'une Api Rest.
+Herdtrack Frontend : Application web pour les usagers. Client de Herdtrack Backend..
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+HerdtrackFrontEnd a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-## Code scaffolding
+## Prérequis
+nodejs v16.14.2
+HerdtrackBackEnd
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Déploiement pour développeur
 
-## Build
+### Clonez le projet :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+https://github.com/ThomasVdbk/Herdtrack-Front-End.git
+```
 
-## Running unit tests
+### Initialisation de l'application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Dans votre terminal à la racine du dossier de l'application, exécutez la commande :
+```
+npm install
+```
+Cette commande va télécharger les modules nécessaire à l'application.
 
-## Running end-to-end tests
+## Lancement de l'application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### serveur de l'application
 
-## Further help
+A la racine du dossier de l'application, exécutez la commande :
+```
+ng serve -o
+```
+Le serveur de l'application Angular sera lancé.
+Un onglet de votre navigateur par défault va s'ouvrir à l'url `http://localhost:4200/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+L'application est opérationnelle !
