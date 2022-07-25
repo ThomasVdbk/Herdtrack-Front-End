@@ -1,3 +1,40 @@
+.logo {
+    max-width: 40%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.55);
+}
+
 .container {
-    margin-top: 150px;
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+.buttonCard {
+    margin-top: 10px;
+    width: 20%;
+    height: 33px;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    background: #49801E;
+    border-radius: 20px;
+}
+
+#button:hover {
+    background: #96BA15;
+}
+
+#button:active {
+    background: #627a0a;
+}
+
+.buttonCard {
+    background-image: linear-gradient(to right, #b0da18 0%, #96BA15 50%, #799904 100%);
+    box-shadow: rgb(124, 124, 124) 5px 5px 15px 5px;
 }
