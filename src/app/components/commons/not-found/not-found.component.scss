@@ -1,14 +1,17 @@
 #gifCPT {
     margin-top: 80px;
-    text-align: center;
-    color: blue;
-
+    color: rgb(71, 71, 141);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #gifCPT img {
 
-    width: 500px;
+    width: 600px;
     margin-bottom: 30px;
+    border-radius: 25%;
 
 }
 
@@ -17,5 +20,16 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
 
+}
+
+//Responsive Format mobile
+@media screen and (max-width: 750px) {
+    #gifCPT img {
+
+        width: 300px;
+        margin-bottom: 30px;
+        border-radius: 25%;
+
+    }
 
 }
