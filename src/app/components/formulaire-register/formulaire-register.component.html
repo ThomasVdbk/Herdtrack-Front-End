@@ -38,19 +38,17 @@
                 <span *ngIf="submitted && form['entree'].invalid">*Entrée nonValide</span>
             </label>
         </div>
-        <!-- <div class="champ">
+        <div class="champ">
             <label for="espece">
                 espece :
                 <select name="espece" formControlName="espece" class="selector">
-
-                        <option value="{'id': 1,'libelle': 'Bovin'}">Bovin</option>
-                        <option value="{'id': 2,'libelle': 'Ovin'}">Ovin</option>
-                        <option value="{'id': 3,'libelle': 'Caprin'}">Caprin</option>
-
+                  <option value="0">Bovin</option>
+                  <option value="1">Ovin</option>
+                  <option value="3">Caprin</option>
                 </select>
                 <span *ngIf="submitted && form['espece'].invalid">*Espece nonValide</span>
             </label>
-        </div> -->
+        </div>
         <!-- <div class="champ">
             <label for="troupeau">
                 troupeau :
