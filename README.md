@@ -1,6 +1,11 @@
 # HerdtrackFrontEnd
 
-definition du projet de l'application
+Herdtrack est une application qui permet d'enregistrer, retrouver et suivre un animal.
+Projet POC réalisé dans le cadre de la POEC, parcours développeur d'application Java, de l'école Aston.
+
+Le projet est composé de 2 applications :
+Herdtrack Backend : Logique métier accécible à partir d'une Api Rest.
+Herdtrack Frontend : Application web pour les usagers. Client de Herdtrack Backend..
 
 HerdtrackFrontEnd a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
