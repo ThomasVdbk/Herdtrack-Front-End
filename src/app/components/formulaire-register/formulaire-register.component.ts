@@ -23,13 +23,17 @@ export class FormulaireRegisterComponent implements OnInit {
   },{id: 2, date : new Date('2022-07-21'),
 raison: 'Achat'}]
   
+troupeaux :any[]=[{id:1,parc:{id:1,libelle:'La buvette',nombreTroupeau:3,quarantaine:false},espece:{id:1,libelle:'Bovin'}}
+,{id:2,parc:{id:2, libelle: "Le pousse-café",nombreTroupeau:3,quarantaine:false},espece:{id:2,libelle:"Ovin"}}]
+
+
    animal: FormGroup = this.builder.group({
     id: [''],
     nom: ['', Validators.required],
     reference: ['', Validators.required],
     entree: ['', Validators.required],
     // espece: ['', Validators.required],
-    // troupeau: ['', Validators.required]
+    troupeau: ['', Validators.required]
 
   })
 
@@ -46,6 +50,7 @@ raison: 'Achat'}]
   }
   save() {
     this.animal.value.entree = this.entrees[this.animal.value.entree]
+    this.animal.value.troupeau = this.troupeaux[this.animal.value.troupeau]
     this.animalService.save(this.animal.value)
       .subscribe(data => console.log(data), error => console.log(error));
   }
