@@ -3,16 +3,11 @@
     <h3 class="titleForm">Enregistrement de l'animal :</h3>
     <div class="spacer"></div>
     <form [formGroup]="animal" (ngSubmit)="onSubmit()" class="registerForm">
-        <!-- <div class="champ">
-            <label for="nom">
-                Nom :
-                <input type="text" formControlName="nom">
-            </label>
-        </div> -->
+        
         <div>
-            <label >nom : </label>
-            <input type="text" formControlName='nom' name="nom" placeholder="nom"/>
-            <span *ngIf="submitted && form['nom'].invalid">*Nom nonValide</span>
+            <label >nom : 
+            <input type="text" formControlName='nom' name="nom"/>
+            <span *ngIf="submitted && form['nom'].invalid">*Nom nonValide</span></label>
         </div>
 
         <div class="champ">
@@ -32,8 +27,6 @@
                 <select name="entree" formControlName="entree" class="selector">
                 <option value="0">Naissance sur site</option>
                 <option value="1">Achat</option>
-                <!-- <option value="{'id': 1,'date':'2022-07-21','raison': 'Naissance'}">Naissance sur site</option>
-                <option value="{'id': 2,'date':'2022-07-21','raison': 'Achat'}">Achat</option> -->
                 </select>
                 <span *ngIf="submitted && form['entree'].invalid">*Entrée nonValide</span>
             </label>
@@ -48,19 +41,23 @@
                 </select>
                 <span *ngIf="submitted && form['espece'].invalid">*Espece nonValide</span>
             </label>
+
+        </div> -->
+         <div class="champ">
+
         </div>
-        <!-- <div class="champ">
+
             <label for="troupeau">
                 troupeau :
                 <select name="troupeau" formControlName="troupeau" class="selector">
 
-                        <option value="{'id':1,'parc':{'id':1,'libelle':'La buvette','nombreTroupeau':3,'quarantaine':false},'espece':{'id':1,'libelle':'Bovin'}}">n°1 - parc : la buvette</option>
-                        <option value="{'id':2,'parc':{'id':1,'libelle':'Le pousse-café','nombreTroupeau':3,'quarantaine':false},'espece':{'id':1,'libelle':'Bovin'}}">n°2 - parc : le pousse-café</option>
+                        <option value="0">n°1 - parc : la buvette</option>
+                        <option value="1">n°2 - parc : le pousse-café</option>
 
                 </select>
                 <span *ngIf="submitted && form['troupeau'].invalid">*Troupeau nonValide</span>
             </label>
-        </div> -->
+        </div> 
         <div class="spacer"></div>
         <button type="submit" >Ajouter</button>
     </form>

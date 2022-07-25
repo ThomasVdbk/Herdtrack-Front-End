@@ -13,14 +13,20 @@ export class FormulaireRegisterComponent implements OnInit {
 
   // @Output()
   //  finish= new EventEmitter;
-  entrees: any[] = [{
-    id: 1,
-    date: new Date('2022-07-21'),
-    raison: 'Naissance'
-  }, {
-    id: 2, date: new Date('2022-07-21'),
-    raison: 'Achat'
-  }]
+
+  entrees : any[]=[{
+    id : 1,
+    date : new Date('2022-07-21'),
+    raison:'Naissance'
+  },{id: 2, date : new Date('2022-07-21'),
+raison: 'Achat'}]
+  
+troupeaux :any[]=[{id:1,parc:{id:1,libelle:'La buvette',nombreTroupeau:3,quarantaine:false},espece:{id:1,libelle:'Bovin'}}
+,{id:2,parc:{id:2, libelle: "Le pousse-café",nombreTroupeau:3,quarantaine:false},espece:{id:2,libelle:"Ovin"}}]
+
+
+   animal: FormGroup = this.builder.group({
+
 
   especes: any[] = [{
     id: 1,
@@ -36,12 +42,16 @@ export class FormulaireRegisterComponent implements OnInit {
     }]
 
   animal: FormGroup = this.builder.group({
+
     id: [''],
     nom: ['', Validators.required],
     reference: ['', Validators.required],
     entree: ['', Validators.required],
+
     espece: ['', Validators.required],
-    // troupeau: ['', Validators.required]
+
+    troupeau: ['', Validators.required]
+
 
   })
 
@@ -58,7 +68,9 @@ export class FormulaireRegisterComponent implements OnInit {
 
   save() {
     this.animal.value.entree = this.entrees[this.animal.value.entree]
+
     this.animal.value.espece = this.especes[this.animal.value.espece]
+    this.animal.value.troupeau = this.troupeaux[this.animal.value.troupeau]
     this.animalService.save(this.animal.value)
       .subscribe(data => console.log(data), error => console.log(error));
   }
