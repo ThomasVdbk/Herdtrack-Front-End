@@ -34,9 +34,10 @@ import { DataCoursesComponent } from './components/formulaire-animal/data-animau
 
 
 import { EnregistrementComponent } from './components/enregistrement/enregistrement.component';
-import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HomePageComponent } from './components/commons/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -49,13 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     DataCoursesComponent,
     FormCoursesComponent,
-
-
-
-  
-
     NotFoundComponent,
-    EnregistrementComponent
+    EnregistrementComponent,
+    HomePageComponent
 
 
 
@@ -65,16 +62,13 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     MatSliderModule,
     MatCardModule,
-
     MatToolbarModule,
     ReactiveFormsModule,
-
     FormsModule,
     MatCardModule,
-    ReactiveFormsModule ,
+    ReactiveFormsModule,
     MatToolbarModule
 
 
