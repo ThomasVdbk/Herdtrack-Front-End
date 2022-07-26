@@ -4,17 +4,17 @@
             <p class="titleForm">Enregistrement de l'animal</p>
         </div>
         <form [formGroup]="animal" (ngSubmit)="onSubmit()" class="registerForm">
-            
+
             <div class="champ">
                 <div>
                     <label ><p>nom :</p> </label>
                 </div>
                 <div>
                     <input type="text" formControlName='nom' name="nom"/>
-                    <span *ngIf="submitted && form['nom'].invalid">*Nom nonValide</span>    
+                    <span *ngIf="submitted && form['nom'].invalid">*Nom nonValide</span>
                 </div>
             </div>
-    
+
             <div class="champ">
                 <div>
                     <label for="reference"><p>numéro de l'animal :</p></label>
@@ -22,12 +22,12 @@
                 <div>
                     <input type="string" formControlName="reference">
                     <span *ngIf="submitted && form['reference'].invalid">*Numéro nonValide</span>
-                </div>    
+                </div>
             </div>
             <div class="champ">
                 <div>
                     <label for="entree">
-                       <p>motif d'entrée :</p> 
+                       <p>motif d'entrée :</p>
                     </label>
                 </div>
                 <div>
@@ -36,27 +36,27 @@
                         <option value="1">Achat</option>
                     </select>
                     <span *ngIf="submitted && form['entree'].invalid">*Entrée nonValide</span>
-                </div>            
+                </div>
             </div>
             <div class="champ">
                 <div>
                     <label for="espece">
-                      <p>espece :</p>  
+                      <p>espece :</p>
                     </label>
                 </div>
                 <div>
                     <select name="espece" formControlName="espece" class="selector">
                         <option value="0">Bovin</option>
                         <option value="1">Ovin</option>
-                        <option value="3">Caprin</option>
+                        <option value="2">Caprin</option>
                       </select>
                       <span *ngIf="submitted && form['espece'].invalid">*Espece nonValide</span>
                 </div>
-            </div> 
+            </div>
             <div class="champ">
                 <div>
                     <label for="troupeau">
-                      <p>troupeau :</p>  
+                      <p>troupeau :</p>
                     </label>
                 </div>
                 <div>
@@ -69,8 +69,8 @@
             </div>
             <div>
                 <button type="submit" id="button">Ajouter</button>
-            </div>       
-            
+            </div>
+
         </form>
     </div>
 </div>
